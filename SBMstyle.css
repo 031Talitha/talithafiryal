@@ -26,6 +26,11 @@
     cursor: pointer;
     
 }
+@media (max-width: 768px) {
+    .navbarSBM {
+        flex-direction: column; /* Mengubah orientasi elemen menjadi vertikal */
+    }
+}
 
 .navbarSBM ul li{
     list-style: none;
@@ -106,3 +111,25 @@ button:hover{
     border: none;
 }
 
+.page1-section{
+    background-color: #FEC200;
+    height:max-content;
+    width: auto;
+    padding: 70px 0;
+}
+
+.page1-section h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.page1-section col-md-4{
+    align-items: center;
+}
+.page1-section h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+.page1-section p{
+    font-size: 20px;
+    font-weight: 300;
+}
