@@ -197,7 +197,7 @@ button:hover{
 
  
  .c-hero_left{
-    padding: 15px;
+    padding: 15px 15px 0 15px;
     height: auto;
     margin-right: 0.5rem;
     background-color: rgb(245, 25, 25);
@@ -230,7 +230,7 @@ button:hover{
  }
 .c-hero_right{
     margin-left: 0.5rem;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 0 15px;
     display: flex;
     flex-direction: column;
     
