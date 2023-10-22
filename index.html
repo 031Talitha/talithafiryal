@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="SBMstyle.css">
+    <script src="contact-validation.js"></script>
+
 </head>
 
 <body>
@@ -21,11 +23,11 @@
         <div class="navbarSBM">
             <img src="logoSBM.png" class="logoSBM" alt="Gambar Logo" style="width: 18%;">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
         <div class="homeSBM">
@@ -40,7 +42,7 @@
     <section class="page1-section">
         <div class="container">
             <div class="text-center">
-                <h2><b>OUR SERVICE</b></h1>
+                <h2><b>OUR SERVICE</b></h2>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
@@ -64,6 +66,129 @@
             </div>
         </div>
     </section>
+    <section class="page2-section">
+        <div class="container">
+            <div class="c-hero row c-row--margin-small">
+                <div class="c-hero_left col 17 s12">
+                    <div class="c-hero_item">
+                        <div class="c-hero_item-content">
+                            <h1><b>Looking for a Reliable Supplier?</b></h1>
+                            <p>TB SABAR MUDA is Your Trusted Partner for Long-term, Large-scale Building Material
+                                Supplies!</p>
+                        </div>
+                        <div class="c-hero_item-image">
+                            <img src="supplier.png" class="image-supplier">
+                        </div>
+                    </div>
+                </div>
+                <div class="c-hero_right col 15 s12">
+                    <h1><b>Thousand Product from trusted brand</b></h1>
+                </div>
+            </div>
+            <div class="c-banner row c-row--margin-default">
+                <div class="col-md">
+                    <div class="row valign-wrapper">
+                        <div class="col-md-4">
+                            <h2><b>Top Product Categories</b></h2>
+                        </div>
+                        <div class="col-md-8 center-align row">
+                            <div class="c-banner_item col 12 s12">
+                                <img src="product1.jpeg" class="image-product">
+                                <p>Insulation Boards</p>
+                            </div>
+                            <div class="c-banner_item col 12 s12">
+                                <img src="product2.jpeg" class="image-product">
+                                <p>Timber</p>
+                            </div>
+                            <div class="c-banner_item col 12 s12">
+                                <img src="product3.jpeg" class="image-product">
+                                <p>Insulation Slabs</p>
+                            </div>
+                            <div class="c-banner_item col 12 s12">
+                                <img src="product4.jpeg" class="image-product">
+                                <p>Plasterboard</p>
+                            </div>
+                            <div class="c-banner_item col 12 s12">
+                                <img src="product5.jpeg" class="image-product">
+                                <p>Sheet Material</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page3-section">
+        <div class="container">
+            <div class="text-center">
+                <h2><b>STORE</b></h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <div class="polaroid">
+                        <img src="store.jpg" class="image-store" alt="store">
+                        <div class="container-store">
+                            <p><b>TB SABAR MUDA</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Visit Our Store</h2>
+                    <p>Experience our wide range of high-quality building materials and products in person. Our store is
+                        conveniently located at:</p>
+                    <address>
+                        <h3>TB SABAR MUDA Building Materials Store</h3><br>
+                        Jl. Setia Budi Timur No. 45, Kanigoro, Kartoharjo, Madiun City<br>
+                        63118 East java, Indonesia<br>
+                    </address>
+                    <p>Our friendly and knowledgeable staff is ready to assist you with all your building needs.</p>
+                    <button type="button" class="buttonSBM"
+                        onclick="window.open('https://maps.app.goo.gl/f7BXeTi1Zve8vTUi6', '_blank')">
+                        <span></span>Get Directions
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page4-section">
+        <div class="container">
+            <div class="text-center">
+                <h2><b>Contact Us</b></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="your-name">Your Name</label>
+                            <input type="text" id="your-name" name="your-name" class="form-control" required>
+                            <span class="error" id="name-error">Name must be in letters</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="your-email">Your Email</label>
+                            <input type="email" id="your-email" name="your-email" class="form-control" required>
+                            <span class="error" id="email-error">Invalid email</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="your-phone">Your Phone</label>
+                            <input type="tel" id="your-phone" name="your-phone" class="form-control" required>
+                            <span class="error" id="phone-error">Phone must be in numbers</span>
+                        </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="your-message">Your Message</label>
+                        <textarea id="your-message" name="your-message" class="form-control" required></textarea>
+                        <span class="error" id="message-error">Message must be filled</span>
+                    </div>
+                    <button type="submit" class="button-submit"><span></span>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

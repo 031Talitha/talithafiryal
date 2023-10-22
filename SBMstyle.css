@@ -20,17 +20,42 @@
     margin-left: auto;
     margin-right: auto;
 }
+.navbarSBM .icon{
+    display: none;
+}
 
 .logoSBM{
     width: 120px;
     cursor: pointer;
     
 }
-@media (max-width: 768px) {
-    .navbarSBM {
-        flex-direction: column; /* Mengubah orientasi elemen menjadi vertikal */
-    }
+#mynavbarSBM{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
 }
+@media screen and (max-width: 600px) {
+    #mynavbarSBM {
+        display: block;
+    }
+    #mynavbarSBM.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #mynavbarSBM.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  }
 
 .navbarSBM ul li{
     list-style: none;
@@ -45,6 +70,7 @@
     color: black;
     text-transform: uppercase;
     font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,7)
 }
 
 .navbarSBM ul li::after{
@@ -83,7 +109,7 @@ button{
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     font-weight: bold;
     border: 2px solid red;
     background: transparent;
@@ -97,7 +123,7 @@ span{
     background-color: red;
     height: 100%;
     width: 0;
-    border-radius: 20px;
+    border-radius: 30px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -132,4 +158,226 @@ button:hover{
 .page1-section p{
     font-size: 20px;
     font-weight: 300;
+}
+
+.page2-section{
+    background-color: whitesmoke;
+    height:max-content;
+    width: auto;
+    padding: 70px 0;
+}
+.c-row--margin-small{
+    margin-bottom: auto;
+}
+ .c-hero{
+    display: flex;
+    padding: 15px 0;
+ }
+
+ 
+ .c-hero_left{
+    padding: 15px;
+    height: auto;
+    margin-right: 0.5rem;
+    background-color: rgb(245, 25, 25);
+ }
+ 
+ .c-hero_left p{
+    color: white;
+ }
+ .c-hero_left h1{
+    color: white;
+ }
+ .c-hero_item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+ }
+ .c-hero_item-content{
+    position: relative;
+    z-index: 1;
+ }
+ .c-hero_item-image{
+    text-align: right;
+    align-self: flex-end;
+    margin-left: 10px;
+ }
+ .image-supplier{
+    width:auto;
+    height:200px;
+    margin: 0%;
+ }
+.c-hero_right{
+    margin-left: 0.5rem;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    
+    background-color: rgb(245, 25, 25);
+}
+.c-hero_right h1{
+    color: white;
+ }
+
+.image-logo{
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+
+}
+.c-banner{
+    padding: 15px 15px 0px 0px;
+    background-color: rgb(245, 25, 25);
+}
+.valign-wrapper{
+    display: flex;
+    align-items: center;
+}
+.center-align{
+    text-align: center;
+}
+.c-banner p{
+    color: white;
+}
+.c-banner h2{
+    color: white;
+}
+
+.image-product{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.page3-section{
+    background-color: whitesmoke;
+    height:max-content;
+    width: auto;
+    padding: 70px 0;
+    
+}
+.page3-section h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.image-store{
+    width: 100%;
+    max-width: 100%;
+    height: 70%;
+    display: block;
+}
+div.polaroid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+div.container-store {
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .row.text-center{
+    display: flex;
+    align-items: stretch;
+  }
+  .col-md-6{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    text-align: center;
+  }
+  .col-md-6 h2, .col-md-6 p, .col-md-6 address, .col-md-6 button {
+    flex: 1; /* Biarkan semua elemen mengisi tinggi yang sama */
+    margin: 20px 0;
+}
+.buttonSBM {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid #FEC200;
+    background: transparent;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 1;
+}
+
+.buttonSBM span {
+    background-color: #FEC200;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.buttonSBM:hover span {
+    width: 100%;
+}
+
+.buttonSBM:hover {
+    border: none;
+}
+
+.page4-section{
+    background-color: rgb(245, 25, 25);
+    height:max-content;
+    width: auto;
+    padding: 70px 0;
+}
+
+.page4-section h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.button-submit{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 2px solid #FEC200;
+    background: transparent;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 1;
+}
+
+.button-submit span {
+    background-color: #FEC200;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.button-submit:hover span {
+    width: 100%;
+}
+
+.button-submit:hover {
+    border: none;
 }
