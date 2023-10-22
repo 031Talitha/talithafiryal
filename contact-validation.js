@@ -9,35 +9,60 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 
     var isValid = true;
 
+    // Validasi Nama
     if (!name.match(namePattern)) {
-        document.getElementById("name-error").style.display = "block";
+        var nameError = document.getElementById("name-error");
+        nameError.textContent = "Name must be in letters";
+        nameError.style.display = "block";
         isValid = false;
+        alert("Name must be in letters"); // Menampilkan pesan kesalahan
+        document.getElementById("your-name").focus();
     } else {
-        document.getElementById("name-error").style.display = "none";
+        var nameError = document.getElementById("name-error");
+        nameError.style.display = "none";
     }
-
+    
+    // Validasi Email
     if (!email.match(emailPattern)) {
-        document.getElementById("email-error").style.display = "block";
+        var emailError = document.getElementById("email-error");
+        emailError.textContent = "Invalid email";
+        emailError.style.display = "block";
         isValid = false;
+        alert("Invalid email"); // Menampilkan pesan kesalahan
+        document.getElementById("your-email").focus();
     } else {
-        document.getElementById("email-error").style.display = "none";
+        var emailError = document.getElementById("email-error");
+        emailError.style.display = "none";
     }
 
+    // Validasi Phone
     if (!phone.match(phonePattern)) {
-        document.getElementById("phone-error").style.display = "block";
+        var phoneError = document.getElementById("phone-error");
+        phoneError.textContent = "Phone must be in numbers";
+        phoneError.style.display = "block";
         isValid = false;
+        alert("Phone must be in numbers"); // Menampilkan pesan kesalahan
+        document.getElementById("your-phone").focus();
     } else {
-        document.getElementById("phone-error").style.display = "none";
+        var phoneError = document.getElementById("phone-error");
+        phoneError.style.display = "none";
     }
 
+    // Validasi Message
     if (message.trim() === "") {
-        document.getElementById("message-error").style.display = "block";
+        var messageError = document.getElementById("message-error");
+        messageError.textContent = "Message must be filled";
+        messageError.style.display = "block";
         isValid = false;
+        alert("Message must be filled"); // Menampilkan pesan kesalahan
+        document.getElementById("your-message").focus();
     } else {
-        document.getElementById("message-error").style.display = "none";
+        var messageError = document.getElementById("message-error");
+        messageError.style.display = "none";
     }
 
     if (!isValid) {
         event.preventDefault();
     }
+    console.log("Form submitted!");
 });

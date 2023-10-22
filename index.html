@@ -14,15 +14,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="SBMstyle.css">
-    <script src="contact-validation.js"></script>
-
 </head>
 
 <body>
+    
     <div class="latarSBM">
         <div class="navbarSBM">
             <img src="logoSBM.png" class="logoSBM" alt="Gambar Logo" style="width: 18%;">
-            <ul>
+            <ul id="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#service">Service</a></li>
                 <li><a href="#product">Product</a></li>
@@ -30,16 +29,16 @@
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
-        <div class="homeSBM">
+        <div class="homeSBM" id="home">
             <h1>FULFILL YOUR BUILDING WITH US</h1>
             <P>Providing various home needs, building materials, engineering tools, chemicals, electrical equipment
             </P>
             <div>
-                <button type="button"><span></span>Get to Know More</button>
+                <button type="button"><span></span><a href="#service">Get to Know More</a></button>
             </div>
         </div>
     </div>
-    <section class="page1-section">
+    <section class="page1-section" id="service">
         <div class="container">
             <div class="text-center">
                 <h2><b>OUR SERVICE</b></h2>
@@ -66,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="page2-section">
+    <section class="page2-section" id="product">
         <div class="container">
             <div class="c-hero row c-row--margin-small">
                 <div class="c-hero_left col 17 s12">
@@ -83,6 +82,7 @@
                 </div>
                 <div class="c-hero_right col 15 s12">
                     <h1><b>Thousand Product from trusted brand</b></h1>
+                    <p>TB SABAR MUDA takes pride in providing thousands of high-quality products from renowned and trusted brands. With products from brands such as Mowilex, Kingspan, Vinilex, Ecotherm, Siniat, and many more, we offer a diverse range to meet your building project needs. </p>
                 </div>
             </div>
             <div class="c-banner row c-row--margin-default">
@@ -119,7 +119,7 @@
         </div>
     </section>
 
-    <section class="page3-section">
+    <section class="page3-section" id="store">
         <div class="container">
             <div class="text-center">
                 <h2><b>STORE</b></h2>
@@ -139,27 +139,37 @@
                         conveniently located at:</p>
                     <address>
                         <h3>TB SABAR MUDA Building Materials Store</h3><br>
-                        Jl. Setia Budi Timur No. 45, Kanigoro, Kartoharjo, Madiun City<br>
-                        63118 East java, Indonesia<br>
+                        <p>Jl. Setia Budi Timur No. 45, Kanigoro, Kartoharjo, Madiun City</p>
+                    <p>63118 East java, Indonesia</p>
                     </address>
                     <p>Our friendly and knowledgeable staff is ready to assist you with all your building needs.</p>
+                    <!-- ikon dan tautan WhatsApp -->
+                    <div class="contact-icons">
+                        <a href="https://wa.me/082240449875" target="_blank" class="contact-link">
+                            <img src="whatsapp.png" alt="WhatsApp">Contact us on WhatsApp</a>
+                
+                            <!-- ikon dan tautan Instagram -->
+                        <a href="https://www.instagram.com/tbsabarmuda/" target="_blank" class="contact-link">
+                            <img src="instagram.png" alt="Instagram">Follow us on Instagram
+                        </a></a>
+                    </div>
                     <button type="button" class="buttonSBM"
-                        onclick="window.open('https://maps.app.goo.gl/f7BXeTi1Zve8vTUi6', '_blank')">
-                        <span></span>Get Directions
+                        onclick="window.open('https://maps.app.goo.gl/f7BXeTi1Zve8vTUi6', '_blank')"><span></span>Get
+                        Directions
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="page4-section">
+    <section class="page4-section" id="contact">
         <div class="container">
             <div class="text-center">
                 <h2><b>Contact Us</b></h2>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <form id="contact-form">
+                    <form id="contact-form" action="https://google.com" method="post">
                         <div class="form-group">
                             <label for="your-name">Your Name</label>
                             <input type="text" id="your-name" name="your-name" class="form-control" required>
@@ -174,6 +184,7 @@
                             <label for="your-phone">Your Phone</label>
                             <input type="tel" id="your-phone" name="your-phone" class="form-control" required>
                             <span class="error" id="phone-error">Phone must be in numbers</span>
+
                         </div>
                 </div>
                 <div class="col-md-6">
@@ -186,7 +197,9 @@
                     </form>
                 </div>
             </div>
+            <script src="contact-validation.js"></script>
         </div>
+
     </section>
 
 </body>
